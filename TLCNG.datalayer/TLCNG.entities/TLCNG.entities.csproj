@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14508A95-3259-41AF-8FC8-5114B6FD4E62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TLCNG.entities</RootNamespace>
+    <AssemblyName>TLCNG.entities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarDatosPredial_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Adeudos_020118.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aniosprueba_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_Avaluos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_Constancias.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_DatosTrasladoRecibo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_Descuento.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialBancos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialPago.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialPagosCancelados.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialPredioTraslados.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialTraslados.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialUbicacion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_HistorialUsuariosBaja.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_Pago.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_PagosAvaluosPendientes.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_PagosDiversos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_PagosPendientesCatastro.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_PagosPredial.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_SecuenciaFolio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAJAS_Traslado.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_Avaluos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_Pago.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_PagosDiversos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_PagosPredial.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_SecuenciaFolio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_CAJAS_Traslado.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Adeudos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Avaluos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_DetallesDeDescuentos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_DetallesDeTerreno.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Info_Manzanas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Nota.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Predios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CANCELADO_SIS_Propietarios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_AbreviaturasColonias.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_ActualImpuesPredial.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Bimestre.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Bimestre1.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_FormaDePago.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_ImpresionMapa.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_PagoEjido.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_PagoMinimo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_PagosDiversos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_TipoConstancia.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_TipoDeDescuento.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_TipoOperacion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_CAJAS_UbicacionDePago.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Categoria.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Colonia.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Coordinacion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_DescripcionFolio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Director.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_EstatusEjecucion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_JefesDepartamentos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_modulo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_nombrePermiso.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_perfil.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_permiso.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_PersonaVulnerable.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_puesto.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_Sexo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_sistema.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoCambio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoCategoria.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoColonia.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoConstruccion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoOperacion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_tipoPerfil.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoPredioEnCalculo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoPredioEnCalculo1.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TipoPropietario.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TiposDeVialidad.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_Configuraciones.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_Dependencias.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_DiasFestivos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_EstatusFlujo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_Historial_Notaria.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_NombreFestividades.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_Notarias.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_PagoMinimoAvaluo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_PorcTasa.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_Solicitante.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_TareasFlujo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_TipoProceso.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_TRASLADOS_TOperacion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAT_UbicacionCajas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Certificado_De_Valor_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CobroConstancias_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CobroPagosAvaluos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CobroPagosDiversos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos01_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos02_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos03_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos04_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos05_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos06_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos07_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos08_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos09_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos10_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos11_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos12_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos13_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos14_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos15_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos16_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos17_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos18_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos19_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos20_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos21_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos22_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos23_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos24_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos25_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos26_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos27_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos28_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos29_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptodeRecargos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptoMultas_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONSULTAPERSONASMORALYFISICA_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fecha1_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fecha2_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fecha3_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fecha4_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fecha5_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fecha6_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FechaActual_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="fiscalreporte1prueba_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Fiscalreporte_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDatosGenerales2_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDatosGenerales_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetDescuentos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPagos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Historial2000_2013norepetidos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="historial2014.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hitorial2000_2013.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="holddups.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="holddups2.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="holdkey.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="holdkey2.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="INCONSISTENCIAS_CATASTRO_ADEUDOS.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Indices1.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MesActual_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Multas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NombreFirmaDirector_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recargosconcepto_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCedulaCatastral_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteCertificado_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteConstancia_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePadron_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RESP_SIS_DetallesDeTerreno.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Salarios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Adeudos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Adeudos_Temporal.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Avaluos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_AvaluosEjecucion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_AñosGenerados.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_DetallesDeDescuentos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_DetallesDeTerreno.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_DetallesDeTerrenoEjecucion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_DetallesDeTerreno_Temporal.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HectareasCobradas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialAdeudo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialAvaluo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialBDViejo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialDetallesDeTerreno.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialGeneral.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialMovimientosPredio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialPredios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialPropietarios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_HistorialUsuario.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Info_Manzanas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Nota.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_NumeroDeCuentaDisponible.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_ParametrosRecargoAnual.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_ParametrosRecargoBimestral.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_PermisosEspeciales.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Predios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_PrediosEjecucion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_Propietarios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SIS_RechazosTraslados.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_CertificadoValorCatastralFiscal_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultaCedulaDatosCatastrales_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultaCedulaDatosPropiedad_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultaCedulaTasaAnual_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultaConstanciaImpuestoPredial_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_ConsultaPadronImpuestoPredial_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ConsultaReportesPredial2_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ConsultaReportesPredialNuevo_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ConsultaReportesPredialPagos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_ConsultaReportesPredial_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_NotariaDependencia_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TasaAnualCedulaCatastral_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tiposdepredios_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TLNCGModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Adeudo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_FlujoxProceso.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Fusion.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Historial_Rechazo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_ParametrosLeyDeIngresos.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Predio.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Propietarios.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Rechazo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_SeguimientoFlujo.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TRA_Tramite.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspAcomodaPagosYAdeudosPorRango_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UspEjecutaAcomodaPagosYAdeudosPorRango_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerClavesOcupadas_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerColoniasAdeudo_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerDetalleManzana_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerManzanaAdeudo_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerManzanasPorColonia_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerMovimientosDineroDetalle_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerMovimientosDinero_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerPagosPredial_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerPagosTraslados_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerPagos_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="uspObtenerPrediosSinPropietario_Result.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios_HistorialJefaturas.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioVisor.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA_ADEUDOS.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA_DetalleDeTerreno.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VISTA_PAGOS.cs">
+      <DependentUpon>TLNCGModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TLNCGModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TLNCGModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="631605796cae4b5a87fd811e8b5ea9f7" Name="Diagram1">
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_Avaluos" Width="1.5" PointX="16.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_Constancias" Width="1.5" PointX="18" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_DatosTrasladoRecibo" Width="1.5" PointX="7.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_Descuento" Width="1.5" PointX="17" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialBancos" Width="1.5" PointX="15.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialPago" Width="1.5" PointX="10.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialPagosCancelados" Width="1.5" PointX="12.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialPredioTraslados" Width="1.5" PointX="17.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialTraslados" Width="1.5" PointX="18.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialUbicacion" Width="1.5" PointX="19.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_HistorialUsuariosBaja" Width="1.5" PointX="19.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_Pago" Width="1.5" PointX="18" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_PagosAvaluosPendientes" Width="1.5" PointX="19.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_PagosDiversos" Width="1.5" PointX="0.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_PagosPendientesCatastro" Width="1.5" PointX="2.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_PagosPredial" Width="1.5" PointX="20.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_SecuenciaFolio" Width="1.5" PointX="4.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAJAS_Traslado" Width="1.5" PointX="20.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_Avaluos" Width="1.5" PointX="20.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_Pago" Width="1.5" PointX="14.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_PagosDiversos" Width="1.5" PointX="16.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_PagosPredial" Width="1.5" PointX="21.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_SecuenciaFolio" Width="1.5" PointX="21.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_CAJAS_Traslado" Width="1.5" PointX="21.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Adeudos" Width="1.5" PointX="22.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Avaluos" Width="1.5" PointX="6.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_DetallesDeDescuentos" Width="1.5" PointX="8.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_DetallesDeTerreno" Width="1.5" PointX="22.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Info_Manzanas" Width="1.5" PointX="10.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Nota" Width="1.5" PointX="2.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Predios" Width="1.5" PointX="23.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CANCELADO_SIS_Propietarios" Width="1.5" PointX="23.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_ActualImpuesPredial" Width="1.5" PointX="24.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Bimestre" Width="1.5" PointX="24.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Bimestre1" Width="1.5" PointX="24.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_FormaDePago" Width="1.5" PointX="15.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_ImpresionMapa" Width="1.5" PointX="12.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_PagoEjido" Width="1.5" PointX="25.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_PagoMinimo" Width="1.5" PointX="25.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_PagosDiversos" Width="1.5" PointX="25.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_TipoConstancia" Width="1.5" PointX="15.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_TipoDeDescuento" Width="1.5" PointX="14.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_TipoOperacion" Width="1.5" PointX="18.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_CAJAS_UbicacionDePago" Width="1.5" PointX="20.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Categoria" Width="1.5" PointX="14" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Coordinacion" Width="1.5" PointX="25.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_DescripcionFolio" Width="1.5" PointX="25.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Director" Width="1.5" PointX="26.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_EstatusEjecucion" Width="1.5" PointX="26.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_JefesDepartamentos" Width="1.5" PointX="26.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_modulo" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_nombrePermiso" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_perfil" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_permiso" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_PersonaVulnerable" Width="1.5" PointX="5.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_puesto" Width="1.5" PointX="8.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Sexo" Width="1.5" PointX="26.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_sistema" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoCambio" Width="1.5" PointX="9.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoCategoria" Width="1.5" PointX="11.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoColonia" Width="1.5" PointX="14.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoConstruccion" Width="1.5" PointX="10.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoOperacion" Width="1.5" PointX="9.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_tipoPerfil" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoPredioEnCalculo" Width="1.5" PointX="0.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoPredioEnCalculo1" Width="1.5" PointX="2.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TipoPropietario" Width="1.5" PointX="4.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TiposDeVialidad" Width="1.5" PointX="10.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_Dependencias" Width="1.5" PointX="27.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_DiasFestivos" Width="1.5" PointX="27.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_EstatusFlujo" Width="1.5" PointX="5.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_Historial_Notaria" Width="1.5" PointX="27.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_NombreFestividades" Width="1.5" PointX="22.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_Notarias" Width="1.5" PointX="27.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_PagoMinimoAvaluo" Width="1.5" PointX="24.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_PorcTasa" Width="1.5" PointX="26.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_Solicitante" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_TareasFlujo" Width="1.5" PointX="5.75" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_TipoProceso" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_TOperacion" Width="1.5" PointX="28.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_UbicacionCajas" Width="1.5" PointX="28.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Indices1" Width="1.5" PointX="28.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Multas" Width="1.5" PointX="16.75" PointY="29.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Operaciones" Width="1.5" PointX="28.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Salarios" Width="1.5" PointX="6.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Adeudos" Width="1.5" PointX="29.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Adeudos_Temporal" Width="1.5" PointX="12.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_AñosGenerados" Width="1.5" PointX="29.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Avaluos" Width="1.5" PointX="18.75" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_AvaluosEjecucion" Width="1.5" PointX="29.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_DetallesDeDescuentos" Width="1.5" PointX="30.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_DetallesDeTerreno" Width="1.5" PointX="13" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_DetallesDeTerreno_Temporal" Width="1.5" PointX="13" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_DetallesDeTerrenoEjecucion" Width="1.5" PointX="30.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialAdeudo" Width="1.5" PointX="8.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialAvaluo" Width="1.5" PointX="20.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialBDViejo" Width="1.5" PointX="30.75" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialDetallesDeTerreno" Width="1.5" PointX="26.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialGeneral" Width="1.5" PointX="28.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialMovimientosPredio" Width="1.5" PointX="12" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialPredios" Width="1.5" PointX="30.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialPropietarios" Width="1.5" PointX="0.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HistorialUsuario" Width="1.5" PointX="2.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Info_Manzanas" Width="1.5" PointX="31.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Nota" Width="1.5" PointX="31.75" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_ParametrosRecargoAnual" Width="1.5" PointX="14.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_ParametrosRecargoBimestral" Width="1.5" PointX="31.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_PermisosEspeciales" Width="1.5" PointX="31.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Predios" Width="1.5" PointX="22.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_PrediosEjecucion" Width="1.5" PointX="32.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_Propietarios" Width="1.5" PointX="32.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_RechazosTraslados" Width="1.5" PointX="32.75" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.sysdiagrams" Width="1.5" PointX="32.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Adeudo" Width="1.5" PointX="4.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Fusion" Width="1.5" PointX="33.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Historial_Rechazo" Width="1.5" PointX="33.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_ParametrosLeyDeIngresos" Width="1.5" PointX="33.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Predio" Width="1.5" PointX="34.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Propietarios" Width="1.5" PointX="8" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Rechazo" Width="1.5" PointX="34.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_SeguimientoFlujo" Width="1.5" PointX="8" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_Tramite" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Usuario" Width="1.5" PointX="14.75" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Usuarios_HistorialJefaturas" Width="1.5" PointX="33.75" PointY="22.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.UsuarioVisor" Width="1.5" PointX="16.75" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Adeudos_020118" Width="1.5" PointX="34.75" PointY="25.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_AbreviaturasColonias" Width="1.5" PointX="34.75" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_Colonia" Width="1.5" PointX="34.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.CAT_TRASLADOS_Configuraciones" Width="1.5" PointX="35.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.holddups" Width="1.5" PointX="10.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.holddups2" Width="1.5" PointX="35.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.holdkey" Width="1.5" PointX="35.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.holdkey2" Width="1.5" PointX="18.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.INCONSISTENCIAS_CATASTRO_ADEUDOS" Width="1.5" PointX="24.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.RESP_SIS_DetallesDeTerreno" Width="1.5" PointX="26.75" PointY="36.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_HectareasCobradas" Width="1.5" PointX="36.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.SIS_NumeroDeCuentaDisponible" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.TRA_FlujoxProceso" Width="1.5" PointX="3" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Historial2000_2013norepetidos" Width="1.5" PointX="36.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.historial2014" Width="1.5" PointX="6.75" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.Hitorial2000_2013" Width="1.5" PointX="36.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.VISTA_ADEUDOS" Width="1.5" PointX="36.75" PointY="27.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.VISTA_DetalleDeTerreno" Width="1.5" PointX="36.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BDCatastroTulancingoModel.VISTA_PAGOS" Width="1.5" PointX="36.75" PointY="34.875" IsExpanded="true" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAJAS_Constancias_CAT_CAJAS_TipoConstancia" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAJAS_Descuento_CAT_CAJAS_TipoDeDescuento" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAJAS_Pago_CAT_CAJAS_FormaDePago" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_Colonia_CAT_Localidad" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_modulo_CAT_sistema" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_nombrePermiso_CAT_modulo1" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_permiso_CAT_nombrePermiso" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_perfil_CAT_sistema" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_perfil_CAT_tipoPerfil" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_CAT_permiso_CAT_perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_Propietarios_CAT_PersonaVulnerable" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_SIS_HistorialMovimientosPredio_CAT_TipoCambio" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_SIS_DetallesDeTerreno_CAT_TipoConstruccion" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_SIS_DetallesDeTerreno_Temporal_CAT_TipoConstruccion" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_SIS_HistorialMovimientosPredio_CAT_TipoOperacion" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_SeguimientoFlujo_CAT_TRASLADOS_EstatusFlujo" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_Tramite_CAT_TRASLADOS_Solicitante" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_SeguimientoFlujo_CAT_TRASLADOS_TareasFlujo" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_FlujoxProceso_CAT_TRASLADOS_TipoProceso" ManuallyRouted="false" />
+        <AssociationConnector Association="BDCatastroTulancingoModel.FK_TRA_Tramite_CAT_TRASLADOS_TipoProceso" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
