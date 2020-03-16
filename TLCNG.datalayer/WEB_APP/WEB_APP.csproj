@@ -72,6 +72,69 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\EstiloMenu.css" />
+    <Content Include="CSS\EstiloPredial.css" />
+    <Content Include="CSS\EstiloPrincipal.css" />
+    <Content Include="CSS\mdb.css" />
+    <Content Include="CSS\Menus.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Imagenes\Fondo\fondo.jpg" />
+    <Content Include="Imagenes\Fondo\FondoBueno.jpg" />
+    <Content Include="Imagenes\Fondo\Fondoder.jpg" />
+    <Content Include="Imagenes\Fondo\FondoGeneral.jpg" />
+    <Content Include="Imagenes\Fondo\Fondoizq.jpg" />
+    <Content Include="Imagenes\Fondo\FondoLogin.jpg" />
+    <Content Include="Imagenes\Fondo\fondoMenu.jpg" />
+    <Content Include="Imagenes\Fondo\i_cerrar.png" />
+    <Content Include="Imagenes\Fondo\logo2.png" />
+    <Content Include="Imagenes\Fondo\SPPTBanner.png" />
+    <Content Include="Imagenes\Menu\Caja.png" />
+    <Content Include="Imagenes\Menu\Ejecucion.png" />
+    <Content Include="Imagenes\Menu\Gestion.png" />
+    <Content Include="Imagenes\Menu\Perfiles.png" />
+    <Content Include="Imagenes\Menu\Predial.png" />
+    <Content Include="Imagenes\Menu\Predial\estadisticas.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\detalles_en_condonacion.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\Historicos.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\movimientos_en_pagos.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\pagos_cancelados.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\predio_por_usuario1.png" />
+    <Content Include="Imagenes\Menu\Predial\Estadisticas\reportes_y_graficas.png" />
+    <Content Include="Imagenes\Menu\Predial\General\adeudos_Foxpro.png" />
+    <Content Include="Imagenes\Menu\Predial\General\contribuyente.png" />
+    <Content Include="Imagenes\Menu\Predial\General\direccion.png" />
+    <Content Include="Imagenes\Menu\Predial\General\historial_de_predio.png" />
+    <Content Include="Imagenes\Menu\Predial\General\historial_MySQL.png" />
+    <Content Include="Imagenes\Menu\Predial\General\pagos_cancelados.png" />
+    <Content Include="Imagenes\Menu\Predial\General\predio.png" />
+    <Content Include="Imagenes\Menu\Predial\igeneral.png" />
+    <Content Include="Imagenes\Menu\Predial\mantenimiento.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\cambio de cuenta.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\contribuyente.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\cosntancia.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\informacion_de_parcelas.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\pago_minimo.png" />
+    <Content Include="Imagenes\Menu\Predial\Mantenimiento\predio.png" />
+    <Content Include="Imagenes\Menu\Predial\procesos.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\aplicacion_de_multas.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\calculo_de_recargos.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\cambio de adeudo.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\cancelacion_de_pagos.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\condonacion de avaluos.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\condonaciones.png" />
+    <Content Include="Imagenes\Menu\Predial\Procesos\descuentos.png" />
+    <Content Include="Imagenes\Menu\Predial\sistema.png" />
+    <Content Include="Imagenes\Menu\Predial\Sistema\ajuste de valores.png" />
+    <Content Include="Imagenes\Menu\Predial\Sistema\autorizacion de avaluos.png" />
+    <Content Include="Imagenes\Menu\Predial\Sistema\cancelacion de predio.png" />
+    <Content Include="Imagenes\Menu\Predial\Sistema\notas.png" />
+    <Content Include="Imagenes\Menu\Predial\Sistema\predios_nuevos.png" />
+    <Content Include="Imagenes\Menu\Usuarios.png" />
+    <Content Include="JS\Login.js" />
+    <Content Include="JS\Menus.js" />
+    <Content Include="JS\Predial.js" />
+    <Content Include="Menu.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,10 +144,33 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Predial\ModuloPredial.aspx" />
     <Content Include="Principal.aspx" />
+    <Content Include="Script\bootstrap.min.js" />
+    <Content Include="Script\dropzone.js" />
+    <Content Include="Script\fontawesome.js" />
+    <Content Include="Script\jquery-3.3.1.min.js" />
+    <Content Include="Script\mdb.min.js" />
+    <Content Include="Script\moment.min.js" />
+    <Content Include="Script\popper.min.js" />
+    <Content Include="Script\solid.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Predial\ModuloPredial.aspx.cs">
+      <DependentUpon>ModuloPredial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Predial\ModuloPredial.aspx.designer.cs">
+      <DependentUpon>ModuloPredial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Principal.aspx.cs">
       <DependentUpon>Principal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +194,7 @@
       <Name>TLCNG.LogicLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

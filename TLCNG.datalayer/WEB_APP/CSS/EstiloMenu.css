@@ -1,0 +1,20 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Imagenes/Fondo/FondoBueno.jpg');
+    background-size: 100%, 100%;
+    background-attachment: fixed;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    width: 100%;
+    min-height: 460px;
+}
+
+.ancho{
+    width:10px;
+}
