@@ -13,5 +13,21 @@ namespace WEB_APP
         {
 
         }
+
+        //Usuario Logueado--------------------------------------------------------------------------------------------------------------------------------
+        [System.Web.Services.WebMethod]
+        public static string ValidaCredenciales(string usuario, string contrasena, int idrol)
+        {
+            string resultado = "";
+            if(usuario == "Usuario" && contrasena == "prueba" && idrol == 2)
+            {
+                resultado ="OK";
+            }
+            else
+            {
+                resultado = "NO";
+            }
+            return resultado;
+        }
     }
 }
