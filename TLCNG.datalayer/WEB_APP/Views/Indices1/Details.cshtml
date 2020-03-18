@@ -1,0 +1,74 @@
+﻿@model TLCNG.entities.Indices1
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Indices1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Mes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Indice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Indice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Publicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_Publicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave_Indices)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave_Indices)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MesTranscurrido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MesTranscurrido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnioMulta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnioMulta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdIndice }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

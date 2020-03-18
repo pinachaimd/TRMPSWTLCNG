@@ -1,0 +1,106 @@
+﻿@model TLCNG.entities.CAT_TRASLADOS_Historial_Notaria
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAT_TRASLADOS_Historial_Notaria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notaria)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notaria)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitularNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitularNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitularApellidoMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitularApellidoMaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TitularApellidoPaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TitularApellidoPaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Calle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Calle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumExt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumExt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Colonia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Colonia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idAnterior)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

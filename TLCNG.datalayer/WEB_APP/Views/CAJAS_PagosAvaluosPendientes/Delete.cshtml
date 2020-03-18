@@ -1,0 +1,176 @@
+﻿@model TLCNG.entities.CAJAS_PagosAvaluosPendientes
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CAJAS_PagosAvaluosPendientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.claveCatastral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.claveCatastral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costoAvaluo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costoAvaluo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pagado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pagado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombrePropietario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombrePropietario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoPaternoPropietario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoPaternoPropietario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoMaternoPropietario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoMaternoPropietario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreComercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreComercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comunidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comunidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mtsTerreno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mtsTerreno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mtsConstUrbana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mtsConstUrbana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mtsConstComercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mtsConstComercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mtsConstIndustrial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mtsConstIndustrial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valorCatastral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorCatastral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFolio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFolio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numeroTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.condonacionAvaluo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.condonacionAvaluo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

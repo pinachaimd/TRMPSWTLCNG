@@ -1,0 +1,162 @@
+﻿@model TLCNG.entities.SIS_DetallesDeTerrenoEjecucion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SIS_DetallesDeTerrenoEjecucion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeCuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manzana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manzana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Predio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Predio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Condominio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Condominio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaConstruccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaConstruccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsoDeSuelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsoDeSuelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTipoDeConstruccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTipoDeConstruccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Municipio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Edificio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Edificio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoOperacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoOperacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionOperacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionOperacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaveOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaveOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeCuentaOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeCuentaOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaveCatastralOrigen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaveCatastralOrigen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estatus)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

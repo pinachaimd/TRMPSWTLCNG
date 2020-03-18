@@ -1,0 +1,74 @@
+﻿@model TLCNG.entities.CANCELADO_SIS_Nota
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CANCELADO_SIS_Nota</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipoNota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipoNota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numeroDeCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numeroDeCuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idColonia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idColonia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.manzana)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.manzana)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nota)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nota)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿@model TLCNG.entities.TRA_ParametrosLeyDeIngresos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TRA_ParametrosLeyDeIngresos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.porceTraslado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.porceTraslado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.porceRecargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.porceRecargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salariominimo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salariominimo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecargoExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecargoExtra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

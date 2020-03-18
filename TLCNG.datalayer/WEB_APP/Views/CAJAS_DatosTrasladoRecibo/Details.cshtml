@@ -1,0 +1,50 @@
+﻿@model TLCNG.entities.CAJAS_DatosTrasladoRecibo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAJAS_DatosTrasladoRecibo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreAdjunto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreAdjunto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NroTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NroTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CambioNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CambioNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FolioOperacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FolioOperacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

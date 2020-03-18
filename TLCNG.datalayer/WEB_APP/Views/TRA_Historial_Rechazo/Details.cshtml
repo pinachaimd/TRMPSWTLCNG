@@ -1,0 +1,122 @@
+﻿@model TLCNG.entities.TRA_Historial_Rechazo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TRA_Historial_Rechazo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MotivoRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotivoRechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idSolicitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idSolicitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecharechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecharechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NoTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NoTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusAnterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CLaveCatastral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CLaveCatastral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdProcesoAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdProcesoAnterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreSolicitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreSolicitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AreaRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AreaRechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoActual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoActual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idTareaAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idTareaAnterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeRestauracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeRestauracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuarioRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuarioRechazo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

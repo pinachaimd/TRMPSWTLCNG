@@ -1,0 +1,87 @@
+﻿@model IEnumerable<TLCNG.entities.CAT_Colonia>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdTipoColonia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaveColonia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoPostal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreLocalidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdLocalidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreMunicipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdMunicipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreEntidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdEntidad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdTipoColonia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClaveColonia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoPostal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreLocalidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdLocalidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreMunicipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdMunicipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreEntidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdEntidad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

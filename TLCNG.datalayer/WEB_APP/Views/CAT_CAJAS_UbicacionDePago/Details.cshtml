@@ -1,0 +1,74 @@
+﻿@model TLCNG.entities.CAT_CAJAS_UbicacionDePago
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAT_CAJAS_UbicacionDePago</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUbicacionDePago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUbicacionDePago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuarioDeAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuarioDeAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUbicacionCaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUbicacionCaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUbicacionColonia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUbicacionColonia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTipoCaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTipoCaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuarioDeCobro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuarioDeCobro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

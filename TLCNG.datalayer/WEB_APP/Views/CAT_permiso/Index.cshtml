@@ -1,0 +1,51 @@
+﻿@model IEnumerable<TLCNG.entities.CAT_permiso>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.estatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idUsuarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAT_nombrePermiso.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CAT_perfil.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.estatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idUsuarios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAT_nombrePermiso.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CAT_perfil.nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

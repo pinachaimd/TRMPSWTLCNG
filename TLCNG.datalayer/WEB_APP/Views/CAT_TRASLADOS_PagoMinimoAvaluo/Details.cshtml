@@ -1,0 +1,66 @@
+﻿@model TLCNG.entities.CAT_TRASLADOS_PagoMinimoAvaluo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAT_TRASLADOS_PagoMinimoAvaluo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.valorMinimoAvaluo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorMinimoAvaluo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.valorPorcentajeAvaluo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.valorPorcentajeAvaluo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaModificacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

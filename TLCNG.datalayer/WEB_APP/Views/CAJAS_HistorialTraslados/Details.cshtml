@@ -1,0 +1,58 @@
+﻿@model TLCNG.entities.CAJAS_HistorialTraslados
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAJAS_HistorialTraslados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoOperacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoOperacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorSobre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorSobre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cobro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cobro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDePago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDePago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FolioTraslado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

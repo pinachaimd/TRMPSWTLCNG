@@ -1,0 +1,129 @@
+﻿@model IEnumerable<TLCNG.entities.CANCELADO_SIS_Predios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Clave)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroDeCuenta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manzana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Predio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Condominio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdColoniaDePredio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaAlta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCalle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroExterior)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroInterior)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CodigoPostal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ClaveCatastral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edificio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ubicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdTipoDeVialidad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Clave)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroDeCuenta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manzana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Predio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Condominio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdColoniaDePredio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaAlta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCalle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroExterior)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroInterior)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CodigoPostal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClaveCatastral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Municipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edificio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ubicacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdTipoDeVialidad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

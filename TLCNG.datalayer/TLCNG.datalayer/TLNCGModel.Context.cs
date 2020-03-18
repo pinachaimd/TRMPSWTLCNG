@@ -1992,5 +1992,7 @@ namespace TLCNG.datalayer
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("uspReiniciaTabla", nombreTablaParameter);
         }
+
+        public System.Data.Entity.DbSet<TLCNG.entities.sp_helpdiagrams_Result> sp_helpdiagrams_Result { get; set; }
     }
 }

@@ -1,0 +1,141 @@
+﻿@model IEnumerable<TLCNG.entities.CAJAS_PagosAvaluosPendientes>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.claveCatastral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clave)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cuenta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.costoAvaluo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pagado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrePropietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoPaternoPropietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.apellidoMaternoPropietario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreComercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comunidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mtsTerreno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mtsConstUrbana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mtsConstComercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mtsConstIndustrial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.valorCatastral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdFolio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.numeroTramite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.condonacionAvaluo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.claveCatastral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clave)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cuenta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.costoAvaluo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pagado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombrePropietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoPaternoPropietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.apellidoMaternoPropietario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreComercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comunidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mtsTerreno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mtsConstUrbana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mtsConstComercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mtsConstIndustrial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.valorCatastral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdFolio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.numeroTramite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.condonacionAvaluo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

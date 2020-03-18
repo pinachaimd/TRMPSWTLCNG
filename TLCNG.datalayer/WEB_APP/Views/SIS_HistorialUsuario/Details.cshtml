@@ -1,0 +1,154 @@
+﻿@model TLCNG.entities.SIS_HistorialUsuario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SIS_HistorialUsuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aPaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aPaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aMaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idCoordinacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCoordinacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoPredial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPerfilAccesoPredial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoGestion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPerfilAccesoGestion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoWeb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPerfilAccesoWeb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoCaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPerfilAccesoCaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaActualizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaActualizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permisoUsuarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permisoUsuarios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permisoPerfiles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permisoPerfiles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idPerfil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idPerfil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeBaja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeBaja)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.identificador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.identificador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioElimina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioElimina)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

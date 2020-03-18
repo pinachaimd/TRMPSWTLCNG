@@ -1,0 +1,129 @@
+﻿@model IEnumerable<TLCNG.entities.SIS_HistorialUsuario>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aPaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aMaterno)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPuesto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idCoordinacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoPredial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoGestion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoWeb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPerfilAccesoCaja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaActualizacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.permisoUsuarios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.permisoPerfiles)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idPerfil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaDeBaja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.identificador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioElimina)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aPaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aMaterno)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPuesto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCoordinacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerfilAccesoPredial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerfilAccesoGestion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerfilAccesoWeb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerfilAccesoCaja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaActualizacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permisoUsuarios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permisoPerfiles)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idPerfil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaDeBaja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.identificador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioElimina)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
