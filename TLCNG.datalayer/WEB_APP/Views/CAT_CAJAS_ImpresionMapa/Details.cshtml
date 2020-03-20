@@ -1,0 +1,58 @@
+﻿@model TLCNG.entities.CAT_CAJAS_ImpresionMapa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAT_CAJAS_ImpresionMapa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombrePapel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombrePapel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaAlta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaAlta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaModificacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

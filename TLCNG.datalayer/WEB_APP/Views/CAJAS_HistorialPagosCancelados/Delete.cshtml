@@ -1,0 +1,144 @@
+﻿@model TLCNG.entities.CAJAS_HistorialPagosCancelados
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CAJAS_HistorialPagosCancelados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Folio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Folio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeCuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDePago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDePago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCancelacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCancelacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadDeBimestres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadDeBimestres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAñoActual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAñoActual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAño_5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAño_5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAño_4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAño_4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAño_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAño_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAño_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAño_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CantidadAño_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CantidadAño_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Año)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,80 @@
+﻿@model TLCNG.entities.CANCELADO_SIS_DetallesDeDescuentos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CANCELADO_SIS_DetallesDeDescuentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeCuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTipoDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTipoDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAñoDeDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAñoDeDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDeAplicacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDeAplicacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FolioOperacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FolioOperacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<TLCNG.entities.holddups2>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Region)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manzana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Predio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Condominio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AreaConstruccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsoDeSuelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Municipio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edificio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Region)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manzana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Predio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Condominio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AreaConstruccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsoDeSuelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Municipio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Edificio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

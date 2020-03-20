@@ -1,0 +1,64 @@
+﻿@model TLCNG.entities.TRA_ParametrosLeyDeIngresos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TRA_ParametrosLeyDeIngresos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.año)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.año)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.porceTraslado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.porceTraslado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.porceRecargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.porceRecargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salariominimo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salariominimo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RecargoExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RecargoExtra)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

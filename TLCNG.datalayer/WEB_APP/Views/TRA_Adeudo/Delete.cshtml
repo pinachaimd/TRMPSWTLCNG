@@ -1,0 +1,232 @@
+﻿@model TLCNG.entities.TRA_Adeudo
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TRA_Adeudo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nroTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nroTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cuenta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clavecat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clavecat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseACalcular)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseACalcular)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.baseGravable)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.baseGravable)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.impuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.impuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recargos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recargos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CargoExtra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CargoExtra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.condoImpuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.condoImpuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.condoRecargo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.condoRecargo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.totalAdeudo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.totalAdeudo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaIngreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaGeneracionAdeudo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaGeneracionAdeudo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaInicioRecargos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaInicioRecargos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeyIngresos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeyIngresos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiasTranscurridos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiasTranscurridos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorFiscal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorFiscal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorComercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorComercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorReferido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorReferido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pagado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pagado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotivoDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotivoDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AñoLeyIngresos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AñoLeyIngresos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Porcentaje)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Porcentaje)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

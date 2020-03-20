@@ -1,0 +1,183 @@
+﻿@model IEnumerable<TLCNG.entities.TRA_Adeudo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.nroTramite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clave)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cuenta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clavecat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.baseACalcular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.baseGravable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.impuesto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recargos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CargoExtra)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.condoImpuesto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.condoRecargo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.totalAdeudo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaIngreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaEntrega)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaGeneracionAdeudo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaInicioRecargos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeyIngresos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiasTranscurridos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorFiscal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorComercial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorReferido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pagado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descuento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MotivoDescuento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AñoLeyIngresos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Porcentaje)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nroTramite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clave)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cuenta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clavecat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.baseACalcular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.baseGravable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.impuesto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recargos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CargoExtra)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.condoImpuesto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.condoRecargo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.totalAdeudo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaIngreso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaEntrega)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaGeneracionAdeudo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaInicioRecargos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeyIngresos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiasTranscurridos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorFiscal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorComercial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorReferido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pagado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descuento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MotivoDescuento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AñoLeyIngresos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Porcentaje)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

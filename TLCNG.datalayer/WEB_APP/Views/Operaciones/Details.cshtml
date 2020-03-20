@@ -1,0 +1,50 @@
+﻿@model TLCNG.entities.Operaciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Operaciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Anio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdNomBim)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdNomBim)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Factor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaveOperaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaveOperaciones)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdOperaciones }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

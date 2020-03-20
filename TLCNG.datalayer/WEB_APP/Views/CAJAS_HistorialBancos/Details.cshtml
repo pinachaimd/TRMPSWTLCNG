@@ -1,0 +1,82 @@
+﻿@model TLCNG.entities.CAJAS_HistorialBancos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CAJAS_HistorialBancos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Folio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Folio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFormaDePago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFormaDePago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FolioUsado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FolioUsado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferenciaBanco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferenciaBanco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDeCuenta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDeCuenta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

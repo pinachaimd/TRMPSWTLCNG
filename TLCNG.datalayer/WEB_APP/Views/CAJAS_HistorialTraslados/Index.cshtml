@@ -1,0 +1,57 @@
+﻿@model IEnumerable<TLCNG.entities.CAJAS_HistorialTraslados>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoOperacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorSobre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cobro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TipoDePago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Año)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoOperacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorSobre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cobro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TipoDePago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Año)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FolioTraslado }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FolioTraslado }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FolioTraslado })
+        </td>
+    </tr>
+}
+
+</table>
